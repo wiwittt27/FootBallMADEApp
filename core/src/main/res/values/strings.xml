@@ -1,0 +1,8 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_club_name">Liverpool</string>
+    <string name="text_vs">vs</string>
+    <string name="_0">0</string>
+    <string name="image_team">Image Team</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="title_result">Result Match</string>
+    <string name="title_team">Team</string>
+    <string name="title_favorite">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="no_data">Empty Data</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">FootBallApp</string>
+    <string name="title_result">Result Match</string>
+    <string name="title_team">Team</string>
+    <string name="title_favorite">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_club_name">Liverpool</string>
+    <string name="_0">0</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="label_year">Year</string>
+    <string name="tv_stadium">Stadium</string>
+    <string name="text_year">1998</string>
+    <string name="text_team_name">Team Name</string>
+
+    <string name="desc_img_club">Logo Image Club</string>
+    <string name="label_description">Description</string>
+    <string name="label_detail_team">Detail Team</string>
+    <string name="label_detail_match">Detail Match</string>
+    <string name="_strip">-</string>
+    <string name="label_home">Liverpool</string>
+    <string name="label_away">Arsenal</string>
+    <string name="league_name">English Premier League</string>
+    <string name="label_event_date">2021–05–23</string>
+    <string name="label_match_status">Match Finished</string>
+    <string name="label_match_name">Match Title</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="button_favorite">Button Favorite</string>
+</resources>

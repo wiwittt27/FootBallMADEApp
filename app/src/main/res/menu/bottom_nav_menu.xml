@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_result"
+        android:icon="@drawable/ic_result_match"
+        app:labelVisibilityMode="unlabeled"
+        android:title="@string/title_result" />
+    <item
+        android:id="@+id/navigation_club"
+        android:icon="@drawable/ic_football"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="@string/title_team" />
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_favorite"
+        app:labelVisibilityMode="unlabeled"
+
+        android:title="@string/title_favorite" />
+</menu>

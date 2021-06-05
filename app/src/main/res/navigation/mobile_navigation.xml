@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_result">
+
+    <fragment
+        android:id="@+id/navigation_club"
+        android:name="com.alawiyaa.footballapp.ui.club.TeamFragment"
+        android:label="@string/title_team"
+        tools:layout="@layout/fragment_team">
+        <action
+            android:id="@+id/action_navigation_club_to_detailTeamFragment"
+            app:destination="@id/detailTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="com.alawiyaa.footballapp.ui.match.ResultMatchFragment"
+        android:label="@string/title_result"
+        tools:layout="@layout/fragment_result_match" >
+        <action
+            android:id="@+id/action_navigation_result_to_detailMatchFragment"
+            app:destination="@id/detailMatchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailTeamFragment"
+        android:name="com.alawiyaa.footballapp.ui.detail.team.DetailTeamFragment"
+        android:label="Detail Team"
+        tools:layout="@layout/fragment_detail_team">
+        <argument
+            android:name="detailTeamFragment"
+            app:argType="com.alawiyaa.footballapp.core.domain.model.Team" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMatchFragment"
+        android:name="com.alawiyaa.footballapp.ui.detail.match.DetailMatchFragment"
+        android:label="@string/label_detail_match"
+        tools:layout="@layout/fragment_detail_match">
+        <argument
+            android:name="detailMatch"
+            app:argType="com.alawiyaa.footballapp.core.domain.model.Match" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteResultFragment"
+        android:name="com.alawiyaa.footballapp.favorite.match.FavoriteResultFragment"
+        android:label="fragment_favorite_result"
+        tools:layout="@layout/fragment_favorite_result" />
+    <fragment
+        android:id="@+id/favoriteClubFragment"
+        android:name="com.alawiyaa.footballapp.favorite.team.FavoriteTeamFragment"
+        android:label="fragment_favorite_team"
+        tools:layout="@layout/fragment_favorite_team" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.alawiyaa.footballapp.favorite.FavoriteFragment"
+        android:label="@string/label_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_navigation_favorite_to_detailMatchFragment"
+            app:destination="@id/detailMatchFragment" />
+        <action
+            android:id="@+id/action_navigation_favorite_to_detailTeamFragment"
+            app:destination="@id/detailTeamFragment" />
+    </fragment>
+</navigation>

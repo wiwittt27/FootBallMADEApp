@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/container"
+    android:padding="@dimen/dimen_10dp"
+    tools:showIn="@layout/fragment_detail_team">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_8dp"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_team_badge"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="120dp"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:contentDescription="@string/desc_img_club"
+            />
+
+        <TextView
+            android:id="@+id/label_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/text_team_name"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/dimen_text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img_team_badge"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/label_team_name"
+            app:layout_constraintStart_toStartOf="@id/label_team_name"
+            app:layout_constraintEnd_toEndOf="@id/label_team_name"
+            tools:text="@string/text_club_name"
+            android:textSize="@dimen/dimen_text_16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/label_team_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/label_year"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/dimen_text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img_team_badge"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_name" />
+        <TextView
+            android:id="@+id/tv_team_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/label_team_year"
+            app:layout_constraintStart_toStartOf="@id/label_team_year"
+            app:layout_constraintEnd_toEndOf="@id/label_team_year"
+            tools:text="@string/text_year"
+            android:textSize="@dimen/dimen_text_16sp"
+
+            />
+
+        <View
+            android:id="@+id/line1"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_year"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_grey" />
+
+        <TextView
+            android:id="@+id/label_team_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_description"
+            app:layout_constraintTop_toBottomOf="@id/img_team_badge"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="@dimen/dimen_text_16sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            app:layout_goneMarginTop="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_team_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/label_team_description"
+            tools:text="@tools:sample/lorem/random"
+            android:textSize="@dimen/dimen_text_16sp"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
